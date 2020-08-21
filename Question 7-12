@@ -1,0 +1,40 @@
+ => 7.What are the minimum numbers of queues needed to implement the priority queue?
+ two ,one is used for storing data and the other is used for priorities.
+ 
+  => 8.What are the different types of traversal techniques in a tree?
+  1.Inorder traversal-Go to left sub-tree,Visit Node,Go to right sub-tree.
+  2.Pre-order traversal-Visit Node,Go to left sub-tree,Go to right sub-tree.
+  3.Post-order traversal-Go to left sub-tree,Go to right sub-tree,visit node.
+  4.Level order.
+  
+   => 9.Why it is said that searching a node in a binary search tree is efficient than that of a simple binary tree?
+   Binary tree can be anything that has two children and one parent.Common operations that can be performed on a binary tree are insertion,deletion and traversal.
+   Binary search tree are more of sorted binary trees that allows for fast and efficient lookup,insertion and deletion of items.Unlike binary trees Binary search tree keep their
+   keeys sorted,so that implements binary search operations.
+   Binary tree is used for fast and efficient lookup of data and information in a tree structure and binary search tree is mainly used for insertion,deletion and seaching of 
+   elements.
+   
+    => 10.  What are the applications of graph DS?
+   1. Google maps uses graphs for building transportation systems, where intersection of two or more roads are considered to be a vertex and the road connecting two vertices is 
+    considered to be an edge, thus their navigation system is based on the algorithm to calculate the shortest path between two vertices.
+  2. In Facebook, users are considered to be the vertices and if they are friends then there is an edge running between them. Facebook’s Friend suggestion algorithm uses graph 
+  theory. Facebook is an example of undirected graph.
+  3.In World Wide Web, web pages are considered to be the vertices. There is an edge from a page u to other page v if there is a link of page v on page u. This is an example of 
+  directed graph. It was the basic idea behind Google Page Ranking Algorithm.
+  4.In Operating System, we come across the Resource Allocation Graph where each process and resources are considered to be vertices. Edges are drawn from resources to the
+  allocated process, or from requesting process to the requested resource. If this leads to any formation of a cycle then a deadlock will occur.
+  
+  
+  => 11.Can we apply Binary search algorithm to a sorted linked list?
+  Yes, Binary search is possible on the linked list if the list is ordered and you know the count of elements in list. But While sorting  the list, 
+  you can access a single element at a time through a pointer to that node i.e. either a previous node or next node. This increases the traversal steps
+  per element in linked list just to find the middle element. This makes it slow and inefficient.
+   Whereas the binary search on an array is fast and efficient  because of its ability to access any element in the array in constant time.
+   
+    => 12.When can you tell that a Memory leak will occur?
+    In computer science, a memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory which is no
+    longer needed is not released. A memory leak may also happen when an object is stored in memory but cannot be accessed by the running code.A memory leak has symptoms
+    similar to a number of other problems and generally can only be diagnosed by a programmer with access to the programs source code.
+    When we initialize or create memory for the any object by using constructor. On that time we can say that we create thread for memory management. 
+    On that time thread active in environment. Programmer forget to call destructor for release or free that thread. Than this type of problem is called memory leakage in c++.
+ 
