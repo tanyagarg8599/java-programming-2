@@ -1,0 +1,71 @@
+=> 14.Which data structure is ideal to perform recursion operation and why?
+Stack. Because of its LIFO (Last In First Out) property it remembers its ‘caller’ so knows whom to return when the function has to return.
+Recursion makes use of system stack for storing the return addresses of the function calls.
+Every recursive function has its equivalent iterative (non-recursive) function. Even when such equivalent iterative procedures are written, explicit stack is to be used.
+
+ => 15.What are some of the most important applications of a stack?
+( Expression Handling) −
+Infix to Postfix or Infix to Prefix Conversion −
+
+The stack can be used to convert some infix expression into its postfix equivalent, or prefix equivalent. These postfix or prefix notations are used in computers
+to express some expressions. These expressions are not so much familiar to the infix expression, but they have some great advantages also. We do not need to maintain 
+operator ordering, and parenthesis.
+
+Postfix or Prefix Evaluation −
+
+After converting into prefix or postfix notations, we have to evaluate the expression to get the result. For that purpose, also we need the help of stack data structure.
+(Backtracking Procedure) −
+
+Backtracking is one of the algorithm designing technique. For that purpose, we dive into some way, if that way is not efficient, we come back to the previous state and
+go into some other paths. To get back from current state, we need to store the previous state. For that purpose, we need stack. Some examples of backtracking is finding the 
+solution for Knight Tour problem or N-Queen Problem etc.
+
+=> 16. INCOMPLETE QUESTION
+
+=>  17.Sorting a stack using a temporary stack.
+Create a temporary stack say tmpStack.
+While input stack is NOT empty do this:
+Pop an element from input stack call it temp
+while temporary stack is NOT empty and top of temporary stack is greater than temp,
+pop from temporary stack and push it to the input stack
+push temp in temporary stack
+The sorted numbers are in tmpStack
+
+import java.util.*; 
+  
+class SortStack 
+{ 
+   
+    public static Stack<Integer> sortstack(Stack<Integer>input) 
+    { 
+        Stack<Integer> tmpStack = new Stack<Integer>(); 
+        while(!input.isEmpty()) 
+        { 
+       
+            int tmp = input.pop(); 
+            while(!tmpStack.isEmpty() && tmpStack.peek()> tmp) 
+         {
+            input.push(tmpStack.pop()); 
+         }
+            tmpStack.push(tmp); 
+        } 
+        return tmpStack; 
+    }
+    public static void main(String args[]) 
+    { 
+        Stack<Integer> input = new Stack<Integer>(); 
+        input.add(34); 
+        input.add(3); 
+        input.add(31); 
+        input.add(98); 
+        input.add(92); 
+        input.add(23);
+        Stack<Integer> tmpStack=sortstack(input); 
+        System.out.println("Sorted numbers are:"); 
+      
+        while (!tmpStack.empty()) 
+        { 
+            System.out.print(tmpStack.pop()+" "); 
+        }  
+    } 
+} 
