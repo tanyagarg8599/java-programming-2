@@ -1,0 +1,45 @@
+ => 1. What do you mean by a data structure?
+Data structure is a way of collecting and organising data in such a way that we can perform operations on these data in an effective way.
+The main idea is to reduce the space and time time complexity of different tasks.Data structure are the means of storing data in a very efficient manner.
+Each structure has different ways in which data is inserted,deleted,or queried.
+Data structure can be linear,non-linear based on the way in which data is accessed.
+
+
+ => 2. What are some of the applications of data structure?
+Arrays,Stack,Queue,Linked-List,Set,Graph,Tree,Hash-Table,File are some of the apploications of Ds.
+
+
+ => 3. What are the advantages of linked list over an array?
+ The main benefit of a linked list over an array is that the list elements can be easily inserted or removed without reallocation or reorganization of the entire structure 
+ because the data items need not be stored in a contiguous memory .Linked list allow insertion and removal of nodes at any point in the list and doing so with a constant 
+ number of operations.Linked list are dynamic so the length of list can increase or decrease as necessary.
+ 
+ 
+  => 4.Write the syntax in c to create a node in singly linked list?
+  Struct node
+  {
+  int data;
+  struct node*next;
+  }
+  
+  
+   => 5.What is the use of doubly linked list when compared to that of singly linked list?
+   In singly linked list the complexity of insertion and deletion at a known position is 0(n) while in case of doubly Linked list complexity is 0(1).
+   Singly Linked list allows traversal elements only in one way while doubly Linked List allows element two way traversal.
+   Singly Linked List are generally used for implementation of stacks while Doubly Linked list can be used to implement stacks as well as heaps and binary trees.
+   Singly Linked list is preffered when we need to save memory and searching is not required as pointer of same index is stored but if we need better performance while searching and me
+   and memory is not a limitation in this case doubly Linked list is more preffered.
+   
+   
+   => 6.What are the differences between an array and stack?
+   An array is a collection of related data values called elements each identified by an index array.
+   A stack is a linear data structure represented by a sequential collection of elements in a fixed order.
+   objects are arranged in such a way so that they can be accessed at any time in a random order while in stack objects are arranged in such a way that they can be added and removed 
+   from one end only.
+   array support many operations such as insertion,deletion traversing,sorting,searching,merging,etc.and in stack it supports only two operations: push to add objects into
+   the stack and pop to remove items from the stack.
+   array contains value of same data type while in stack contain values that belong to different data types.
+   
+   
+  
+ 
